@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>E-Book Informatika SMP</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+<div class="d-flex">
+  <!-- Sidebar -->
+  <nav class="bg-dark text-white p-3" style="min-width: 250px; height: 100vh; overflow-y: auto;">
+    <h4 class="text-white">DAFTAR ISI</h4>
+    <div class="accordion" id="kelasAccordion">
+      
+      <!-- KELAS 7 -->
+      <div class="accordion-item bg-dark border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kelas7">
+            KELAS 7
+          </button>
+        </h2>
+        <div id="kelas7" class="accordion-collapse collapse" data-bs-parent="#kelasAccordion">
+          <ul class="nav flex-column ms-3">
+            <li class="nav-item"><a class="nav-link text-white" href="#kelas7_bab1">Bab 1</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#kelas7_bab2">Bab 2</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- KELAS 8 -->
+      <div class="accordion-item bg-dark border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kelas8">
+            KELAS 8
+          </button>
+        </h2>
+        <div id="kelas8" class="accordion-collapse collapse" data-bs-parent="#kelasAccordion">
+          <ul class="nav flex-column ms-3">
+            <li class="nav-item"><a class="nav-link text-white" href="#kelas8_bab1">Bab 1</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#kelas8_bab2">Bab 2</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- KELAS 9 -->
+      <div class="accordion-item bg-dark border-0">
+        <h2 class="accordion-header">
+          <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kelas9">
+            KELAS 9
+          </button>
+        </h2>
+        <div id="kelas9" class="accordion-collapse collapse" data-bs-parent="#kelasAccordion">
+          <ul class="nav flex-column ms-3">
+            <li class="nav-item"><a class="nav-link text-white" href="#kelas9_bab1">Bab 1</a></li>
+            <li class="nav-item"><a class="nav-link text-white" href="#kelas9_bab2">Bab 2</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pencarian -->
+    <div class="mt-4">
+      <input type="text" class="form-control" placeholder="Cari..." id="searchInput" onkeyup="searchBab()">
+    </div>
+  </nav>
+
+  <!-- Konten -->
+  <div class="p-4" style="flex-grow: 1;">
+    <h2 class="mb-3">Selamat datang di E-Book Informatika SMP</h2>
+    <div id="babContent">
+      <hr><h3 id="kelas7_bab1">Bab 1 - Kelas 7</h3>
+      <p>Konten Bab 1 kelas 7...</p>
+
+      <hr><h3 id="kelas7_bab2">Bab 2 - Kelas 7</h3>
+      <p>Konten Bab 2 kelas 7...</p>
+
+      <hr><h3 id="kelas8_bab1">Bab 1 - Kelas 8</h3>
+      <p>Konten Bab 1 kelas 8...</p>
+
+      <hr><h3 id="kelas8_bab2">Bab 2 - Kelas 8</h3>
+      <p>Konten Bab 2 kelas 8...</p>
+
+      <hr><h3 id="kelas9_bab1">Bab 1 - Kelas 9</h3>
+      <p>Konten Bab 1 kelas 9...</p>
+
+      <hr><h3 id="kelas9_bab2">Bab 2 - Kelas 9</h3>
+      <p>Konten Bab 2 kelas 9...</p>
+    </div>
+  </div>
+</div>
+
+<script>
+function searchBab() {
+  var input = document.getElementById('searchInput');
+  var filter = input.value.toLowerCase();
+  var content = document.getElementById('babContent');
+  var html = content.innerHTML;
+  if (filter.length > 2) {
+    var regex = new RegExp(filter, 'gi');
+    content.innerHTML = html.replace(regex, (match) => `<mark>${match}</mark>`);
+  } else {
+    content.innerHTML = html;
+  }
+}
+</script>
+</body>
+</html>
