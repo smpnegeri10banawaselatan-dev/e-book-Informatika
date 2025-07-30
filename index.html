@@ -15,8 +15,7 @@
     <h4 class="text-white">DAFTAR ISI</h4>
     <div class="accordion" id="kelasAccordion">
 
-      <!-- Fungsi untuk membuat bagian kelas dan bab -->
-      <!-- KELAS 7 -->
+      <!-- Kelas 7 -->
       <div class="accordion-item bg-dark border-0">
         <h2 class="accordion-header">
           <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kelas7">
@@ -34,110 +33,16 @@
                 </h2>
                 <div id="kelas7bab1" class="accordion-collapse collapse" data-bs-parent="#babKelas7">
                   <div class="accordion-body p-2">
-                    <a class="nav-link text-white ps-4" href="#kelas7_bab1">Lihat Konten</a>
+                    <a href="#" class="nav-link text-white ps-4 load-bab" data-file="bab/kelas7_bab1.html">Lihat Konten</a>
                   </div>
                 </div>
               </div>
-              <div class="accordion-item bg-dark border-0">
-                <h2 class="accordion-header">
-                  <button class="accordion-button bg-secondary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kelas7bab2">
-                    Bab 2
-                  </button>
-                </h2>
-                <div id="kelas7bab2" class="accordion-collapse collapse" data-bs-parent="#babKelas7">
-                  <div class="accordion-body p-2">
-                    <a class="nav-link text-white ps-4" href="#kelas7_bab2">Lihat Konten</a>
-                  </div>
-                </div>
-              </div>
+              <!-- Tambahkan bab lain di sini -->
             </div>
           </div>
         </div>
       </div>
 
-      <!-- KELAS 8 -->
-      <div class="accordion-item bg-dark border-0">
-        <h2 class="accordion-header">
-          <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kelas8">
-            KELAS 8
-          </button>
-        </h2>
-        <div id="kelas8" class="accordion-collapse collapse" data-bs-parent="#kelasAccordion">
-          <div class="accordion-body p-0">
-            <div class="accordion" id="babKelas8">
-              <div class="accordion-item bg-dark border-0">
-                <h2 class="accordion-header">
-                  <button class="accordion-button bg-secondary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kelas8bab1">
-                    Bab 1
-                  </button>
-                </h2>
-                <div id="kelas8bab1" class="accordion-collapse collapse" data-bs-parent="#babKelas8">
-                  <div class="accordion-body p-2">
-                    <a class="nav-link text-white ps-4" href="#kelas8_bab1">Lihat Konten</a>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item bg-dark border-0">
-                <h2 class="accordion-header">
-                  <button class="accordion-button bg-secondary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kelas8bab2">
-                    Bab 2
-                  </button>
-                </h2>
-                <div id="kelas8bab2" class="accordion-collapse collapse" data-bs-parent="#babKelas8">
-                  <div class="accordion-body p-2">
-                    <a class="nav-link text-white ps-4" href="#kelas8_bab2">Lihat Konten</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- KELAS 9 -->
-      <div class="accordion-item bg-dark border-0">
-        <h2 class="accordion-header">
-          <button class="accordion-button bg-dark text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kelas9">
-            KELAS 9
-          </button>
-        </h2>
-        <div id="kelas9" class="accordion-collapse collapse" data-bs-parent="#kelasAccordion">
-          <div class="accordion-body p-0">
-            <div class="accordion" id="babKelas9">
-              <div class="accordion-item bg-dark border-0">
-                <h2 class="accordion-header">
-                  <button class="accordion-button bg-secondary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kelas9bab1">
-                    Bab 1
-                  </button>
-                </h2>
-                <div id="kelas9bab1" class="accordion-collapse collapse" data-bs-parent="#babKelas9">
-                  <div class="accordion-body p-2">
-                    <a class="nav-link text-white ps-4" href="#kelas9_bab1">Lihat Konten</a>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item bg-dark border-0">
-                <h2 class="accordion-header">
-                  <button class="accordion-button bg-secondary text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#kelas9bab2">
-                    Bab 2
-                  </button>
-                </h2>
-                <div id="kelas9bab2" class="accordion-collapse collapse" data-bs-parent="#babKelas9">
-                  <div class="accordion-body p-2">
-                    <a class="nav-link text-white ps-4" href="#kelas9_bab2">Lihat Konten</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Pencarian -->
-    <div class="mt-4">
-      <input type="text" class="form-control" placeholder="Cari..." id="searchInput" onkeyup="searchBab()">
     </div>
   </nav>
 
@@ -145,55 +50,37 @@
   <div class="p-4" style="flex-grow: 1;">
     <h2 class="mb-3">Selamat datang di E-Book Informatika SMP</h2>
     <div id="babContent">
-      <hr><h3 id="kelas7_bab1">Bab 1 - Kelas 7</h3>
-      <p>Konten Bab 1 kelas 7...</p>
-
-      <hr><h3 id="kelas7_bab2">Bab 2 - Kelas 7</h3>
-      <p>Konten Bab 2 kelas 7...</p>
-
-      <hr><h3 id="kelas8_bab1">Bab 1 - Kelas 8</h3>
-      <p>Konten Bab 1 kelas 8...</p>
-
-      <hr><h3 id="kelas8_bab2">Bab 2 - Kelas 8</h3>
-      <p>Konten Bab 2 kelas 8...</p>
-
-      <hr><h3 id="kelas9_bab1">Bab 1 - Kelas 9</h3>
-      <p>Konten Bab 1 kelas 9...</p>
-
-      <hr><h3 id="kelas9_bab2">Bab 2 - Kelas 9</h3>
-      <p>Konten Bab 2 kelas 9...</p>
+      <p>Silakan pilih bab dari daftar isi di sebelah kiri.</p>
     </div>
   </div>
 </div>
 
-<!-- Script Pencarian -->
+<!-- Script -->
 <script>
-function searchBab() {
-  var input = document.getElementById('searchInput');
-  var filter = input.value.toLowerCase();
-  var content = document.getElementById('babContent');
-  var original = content.textContent || content.innerText;
-
-  // Clear previous highlights
-  var elements = content.querySelectorAll("mark");
-  elements.forEach(e => {
-    const parent = e.parentNode;
-    parent.replaceChild(document.createTextNode(e.textContent), e);
-    parent.normalize();
+document.querySelectorAll('.load-bab').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    const file = this.getAttribute('data-file');
+    fetch(file)
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('babContent').innerHTML = `
+          <button class="btn btn-outline-primary mb-3" onclick="printPDF()">Cetak PDF Bab Ini</button>
+          ${data}
+        `;
+      })
+      .catch(err => {
+        document.getElementById('babContent').innerHTML = '<p class="text-danger">Gagal memuat konten bab.</p>';
+      });
   });
+});
 
-  if (filter.length > 2) {
-    const walker = document.createTreeWalker(content, NodeFilter.SHOW_TEXT);
-    while (walker.nextNode()) {
-      const node = walker.currentNode;
-      const val = node.nodeValue;
-      if (val.toLowerCase().includes(filter)) {
-        const span = document.createElement("span");
-        span.innerHTML = val.replace(new RegExp(filter, 'gi'), match => `<mark>${match}</mark>`);
-        node.replaceWith(span);
-      }
-    }
-  }
+function printPDF() {
+  const content = document.getElementById('babContent').innerHTML;
+  const printWindow = window.open('', '_blank');
+  printWindow.document.write(`<html><head><title>Cetak Bab</title></head><body>${content}</body></html>`);
+  printWindow.document.close();
+  printWindow.print();
 }
 </script>
 </body>
